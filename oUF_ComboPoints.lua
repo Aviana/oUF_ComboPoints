@@ -240,7 +240,7 @@ local function Enable(self, unit)
 		element.ForceUpdate = ForceUpdate
 
 		if(RequirePower) then
-			self:RegisterEvent("UNIT_DISPLAYPOWER", VisibilityPath)
+			self:RegisterEvent("UNIT_DISPLAYPOWER", VisibilityPath, true) -- needs to be unitless for target
 		end
 
 		element.ComboPointsEnable = ComboPointsEnable
